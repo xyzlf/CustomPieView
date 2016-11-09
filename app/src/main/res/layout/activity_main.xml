@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f3f3f3"/>
+
+    <!-- 头部数据 -->
+    <LinearLayout
+        android:id="@+id/asset_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/assets_total_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总账户（元）"
+                android:textColor="#454a4d"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/assets_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="133604.09"
+                android:textColor="#454a4d"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="55dp"
+            android:background="#e6e6e6"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/assets_profit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总收益（元）"
+                android:textColor="#454a4d"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/assets_profit_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="+5236.55"
+                android:textColor="#ed4e39"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 饼状图部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp">
+
+
+        <com.xyzlf.view.pieviewlib.CustomPieView
+            android:id="@+id/asset_pieview"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/asset_pie_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
