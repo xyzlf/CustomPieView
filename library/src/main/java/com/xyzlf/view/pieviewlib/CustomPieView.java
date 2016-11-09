@@ -52,7 +52,7 @@ public class CustomPieView extends View {
     }
 
     /**
-     * 开始的角度
+     * the start angel. eg: 0, 90, 180...
      * @param startAngel
      */
     public void setStartAngel(float startAngel) {
@@ -61,7 +61,7 @@ public class CustomPieView extends View {
     }
 
     /**
-     * 数据源
+     * data
      * @param datas
      */
     public void setDatas(List<CustomPieData> datas) {

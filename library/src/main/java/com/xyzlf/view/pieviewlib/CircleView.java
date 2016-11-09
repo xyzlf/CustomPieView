@@ -61,7 +61,7 @@ public class CircleView extends View {
     }
 
     /**
-     * 颜色值
+     * Color
      * @param color
      */
     public void setColor(@ColorInt int color) {
