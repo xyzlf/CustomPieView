@@ -3,7 +3,7 @@
 
 # Gradle
     
-    compile ('com.xyzlf.share:sharesdk:0.0.6') {
+    compile ('com.xyzlf.view:pieview:0.0.1') {
     	exclude group: 'com.android.support', module: 'appcompat-v7'
     }
 
